@@ -1,0 +1,14 @@
+{
+  "name": "basesetup",
+  "version": "1.0.0",
+  "description": "Starter project for initial training",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "Shashidhar Gurumurthy @ Intelliswift",
+  "license": "MIT",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
