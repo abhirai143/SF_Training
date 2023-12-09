@@ -21,9 +21,9 @@ const companies = [
 //  task 1 
 
 console.log("no of campanies -> " , companies.length);
-for(var i = 0; i<companies.length; i++){
-  console.log("company name -> ",companies[i].name)
-  console.log("Headquarter name -> ",companies[i].hq)
+for(var i = 0; i < companies.length; i++){
+  console.log("company name -> ", companies[i].name)
+  console.log("Headquarter name -> ", companies[i].hq)
 }
 
 //  task 2
@@ -31,7 +31,7 @@ for(var i = 0; i<companies.length; i++){
 function displayInfo() {
   const container = document.body;
   let listItem = '';
-  for (let i = 0; i<companies.length; i++){
+  for (let i = 0; i < companies.length; i++){
     const company = companies[i];
     listItem += `<li>${company.name} - ${company.hq} - ${company.indiaLocations.join(' , ')}</li>`;
   }
