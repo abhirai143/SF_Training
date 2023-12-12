@@ -20,14 +20,15 @@ function run() {
 
 		
 	// }
+	const movieInfoDiv = document.getElementById('table');
+	let tableHTML = '';
 	const mpp = movies.map((object) =>{
 		console.log(object)
-		let tableHTML = "<table class='ui celled table'>";
 		tableHTML += "<thead><tr><th>Language</th><th>Count</th></tr></thead>";
 		tableHTML += "<tbody>";
-		tableHTML += `<tr><td>${object.originalLanguage} (${object.spokenLanguages})</td><td>${count}</td></tr>`;	
-		tableHTML += "</tbody></table>";
-		document.body.innerHTML = tableHTML;
-
+		tableHTML += `<tr><td>${object.originalLanguage} (${object.spokenLanguages})</td><td>here i have to display count</td></tr>`;	
+		tableHTML += "</tbody>"
 	})
+	movieInfoDiv.innerHTML = "<table class='ui celled table'>" + tableHTML +"</table>";
+
 }
